@@ -1,0 +1,34 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "password": "123",
+      "username": "Test"
+    },
+    {
+      "password": "123",
+      "username": "Truong",
+      "id": 2
+    }
+  ],
+  "text": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "my Fruit",
+      "para": "Haha is work "
+    },
+    {
+      "userId": 1,
+      "title": "My shit",
+      "para": "Fuck you I want to die ",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "title": "new one",
+      "para": "check over flow",
+      "id": 3
+    }
+  ]
+}
