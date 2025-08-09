@@ -41,7 +41,7 @@ export default function SignUp() {
                             "Content-Type": "application/json",
                         },
                         body: JSON.stringify(insertValue),
-                    }).then(res => res.json()).then(nav("/login")).catch(err => console.log(err));
+                    }).then(res => res.json()).then(() => nav("/login")).catch(err => console.log(err));
                 } else {
                     setErr("User name already been used!")
                 }

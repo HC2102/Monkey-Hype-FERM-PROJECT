@@ -56,7 +56,7 @@ export default function Game() {
         fetch(urlGet)
             .then(res => res.json())
             .then(data => setTextList(data))
-            .catch(setTextList([]));
+            .catch(() => setTextList([]));
     }, []);
 
     const handleSelectChange = (e) => {
