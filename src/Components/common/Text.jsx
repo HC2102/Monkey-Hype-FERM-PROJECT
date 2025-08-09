@@ -170,7 +170,7 @@ export default function Text() {
                     <form onSubmit={e => { handleSubmit(e) }}>
                         <DialogContent>
                             <DialogContentText id="alert-dialog-description">
-                                Please fill out those field to created a new paragraph
+                                Please fill out the fields to create a new paragraph.
                             </DialogContentText>
                             <TextField required fullWidth margin='normal' id="outlined-basic" label="Title" variant="outlined"
                                 onChange={(e) => setTitle(e.target.value)} />
