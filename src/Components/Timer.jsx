@@ -3,10 +3,10 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-export default function Timer(props) {
+const Timer = React.memo(function Timer({ value, ...props }) {
     return (
         <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-            <CircularProgress variant="determinate" {...props} />
+            <CircularProgress variant="determinate" value={value} {...props} />
             <Box
                 sx={{
                     top: 0,
@@ -20,9 +20,11 @@ export default function Timer(props) {
                 }}
             >
                 <Typography variant="caption" component="div" color="text.secondary">
-                    {`${Math.round(props.value)}s`}
+                    {`${Math.round(value)}s`}
                 </Typography>
             </Box>
         </Box>
     );
-}
+});
+
+export default Timer;
