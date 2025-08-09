@@ -83,10 +83,10 @@ export default function Game() {
         setCompleted([]);
         setWpm(0);
         if (textChoice !== "") {
-            const target = textList.filter(t => t.id === textChoice);
-            if (target != null) {
-                setText(target[0].para.trim());
-                setWords(target[0].para.trim().split(" "));
+            const target = textList.find(t => t.id === textChoice);
+            if (target) {
+                setText(target.para.trim());
+                setWords(target.para.trim().split(" "));
                 setStarted(true);
                 setIsFinished(false);
                 setStartTime(Date.now());
